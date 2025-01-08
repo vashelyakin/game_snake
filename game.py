@@ -1,6 +1,13 @@
 import random
 import pygame
 
+"""
+Smooth snake game. Uses pygame library.
+
+author: Vladislav Sheliakin
+date: 2025.01.08
+"""
+
 pygame.init()
 
 width = 1000
