@@ -149,6 +149,11 @@ def game_lose():
         if len(snake_list) > snake_length:
             del snake_list[0]
 
+        for x in snake_list[:-1]:  # столкновение с головой
+            if x == snake_head:
+                game_close = True
+
+
         # draw the snake body from tail to head
         counter = 0
         for i in snake_list:
